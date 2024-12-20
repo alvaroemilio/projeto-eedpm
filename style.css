@@ -1,0 +1,125 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007BFF;
+    padding: 30px;
+    text-align: center;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+}
+
+header .favicon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Imagens como Botões */
+.image-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.image-buttons .button {
+    margin: 0 15px;
+}
+
+.image-buttons .button img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .image-buttons {
+        flex-direction: column;
+    }
+
+    .image-buttons .button img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer-buttons {
+        flex-direction: column;
+    }
+}

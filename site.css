@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+}
+
+html,body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+    color: #333;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+}
+
+header .favicon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.navbar {
+    background-color: #007BFF;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+    justify-content: center;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.conteudo-pai{
+   display: flex;
+   width: 60%;
+   flex: 1 0 auto;
+   background-color: antiquewhite;
+   margin-left: 20%;
+   margin-right: 21%;
+}
+
+.conteudo-pai div{
+margin: 30px;
+text-align: justify;
+align-content: center start;
+}
+
+.image-buttons {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    margin-left: 45%;
+    margin-right: 45%;
+    padding-top: 100px;
+}
+
+.button {
+    height:200px;
+}
+a {
+    text-decoration: none;
+}
+
+p {
+    text-decoration: none;
+    font-size: larger;
+    text-align: justify;
+}
+
+.conteudo-imagem{
+    height: 500px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-buttons .button {
+    margin: 0 15px;
+}
+
+.image-buttons .button img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    max-width: 600px;  
+    gap: 10px;  
+    justify-content: center;
+  }
+  
+  .imagem {
+    width: calc(33.33% - 10px);  /* Cada imagem ocupa um terço do tamanho da div, com espaço entre elas */
+    position: relative;
+  }
+  
+  .imagem .tamanho {
+    width: 100%;
+    height: auto; 
+    display: block;
+    border-radius: 8px; 
+  }
+
+
+section {
+    flex: 1 0 auto;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .conteudo-pai{
+        flex-direction: column;
+    }
+
+    .conteudo-pai div{
+        flex-direction: column;
+    }
+    
+    .conteudo-pai p{
+        flex-direction: column;
+    }
+
+    .conteudo-imagem{
+        height: 150px;
+        width: 150px;
+        gap: 20px;
+        align-items: center;    
+    }
+
+    .image-buttons {
+        flex-direction: column;
+    }
+
+    .image-buttons .button img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer-buttons {
+        flex-direction: column;
+    }
+}
