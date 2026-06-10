@@ -10,6 +10,6 @@ Por meio deste projeto, os alunos aplicaram conhecimentos adquiridos durante o c
 
 O resultado pode ser acessado pelo endereço:
 
-Projeto EEDPM
+Projeto EEDPM -> https://alvaroemilio.github.io/projeto-eedpm/
 
 Este trabalho demonstra a capacidade dos estudantes em desenvolver soluções práticas utilizando tecnologia, fortalecendo a integração entre aprendizagem, inovação e comunidade escolar.
